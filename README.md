@@ -21,6 +21,12 @@ If you have suggestions for how close-label could be improved, or want to report
 
 For more, check out the [Contributing Guide](CONTRIBUTING.md).
 
+## Donate
+
+<img src="https://i.imgur.com/ndlBtuX.png" width="200">
+
+BTC: 1LoGErFoNzE1gCA5fzk6A82nV6iJdKssSZ
+
 ## License
 
 [ISC](LICENSE) © 2019 Bruno Logerfo <bruno@logerfo.tk> (https://github.com/Logerfo/close-label)
