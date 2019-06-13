@@ -8,8 +8,6 @@ cache:
   directories:
     - "node_modules"
 script: 'true'
-after_success:
-  - npx glitch-deploy
 notifications:
   email:
     recipients:
