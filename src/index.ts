@@ -24,6 +24,10 @@ export = (app: Application) => {
         if (!pull.merged) {
             return
         }
+        const repo = await context.github.repos.get(context.repo())
+        if (repo.data.default_branch != pull.base.ref) {
+            return
+        }
         const issues = new Set<string>()
         let match = re.exec(pull.body)
         while (match) {
