@@ -1,4 +1,4 @@
-import { Application/*, Context*/ } from 'probot' // eslint-disable-line no-unused-vars
+import { Application/*, Context*/ } from 'probot'
 const yaml = require('js-yaml')
 
 const re = /fixes #(\d+)/ig
