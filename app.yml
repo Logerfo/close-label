@@ -23,7 +23,7 @@ default_events:
 # - fork
 # - gollum
 # - issue_comment
-- issues
+# - issues
 # - label
 # - milestone
 # - member
@@ -35,7 +35,7 @@ default_events:
 # - project_card
 # - project_column
 # - public
-# - pull_request
+- pull_request
 # - pull_request_review
 # - pull_request_review_comment
 # - push
@@ -82,7 +82,7 @@ default_permissions:
 
   # Pull requests and related comments, assignees, labels, milestones, and merges.
   # https://developer.github.com/v3/apps/permissions/#permission-on-pull-requests
-  # pull_requests: read
+  pull_requests: write
 
   # Manage the post-receive hooks for a repository.
   # https://developer.github.com/v3/apps/permissions/#permission-on-repository-hooks
@@ -124,6 +124,8 @@ default_permissions:
   # https://developer.github.com/v3/apps/permissions/
   # organization_administration: read
 
+  single_file: read
+
 
 # The name of the GitHub App. Defaults to the name specified in package.json
 # name: My Probot App
@@ -137,3 +139,5 @@ default_permissions:
 # Set to true when your GitHub App is available to the public or false when it is only accessible to the owner of the app.
 # Default: true
 # public: false
+
+single_file_name: .github/close-label.yml
