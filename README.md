@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/Logerfo/close-label.svg?branch=master)](https://travis-ci.org/Logerfo/close-label)
+[![Known Vulnerabilities](https://snyk.io/test/github/logerfo/close-label/badge.svg)](https://snyk.io/test/github/logerfo/close-label)
+[![Dependencies Status](https://david-dm.org/logerfo/close-label/dev-status.svg)](https://david-dm.org/logerfo/close-label?type=dev)
+
 # close-label
 
 > A GitHub App built with [Probot](https://github.com/probot/probot) that applies a specific label to an issue closed through a pull request to the default branch in the same repository considering its current labels.
