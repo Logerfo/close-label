@@ -1,6 +1,6 @@
 # close-label
 
-> A GitHub App built with [Probot](https://github.com/probot/probot) that applies a specific label to an issue closed through a pull request in the same repository considering its current labels.
+> A GitHub App built with [Probot](https://github.com/probot/probot) that applies a specific label to an issue closed through a pull request to the default branch in the same repository considering its current labels.
 
 ## Setup
 
