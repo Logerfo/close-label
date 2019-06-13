@@ -27,7 +27,7 @@ export = (app: Application) => {
         }
         const repo = await context.github.repos.get(context.repo())
         if (repo.data.default_branch != pull.base.ref) {
-            app.log(`The pull request base branch (${pull.base.ref}) is not the repo default branch (${repo.data.default_branch}). Stepping out...`)
+            app.log(`The pull request target branch (${pull.base.ref}) is not the repo default branch (${repo.data.default_branch}). Stepping out...`)
             return
         }
         const issues = new Set<string>()
