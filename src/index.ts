@@ -45,6 +45,10 @@ export = (app: Application) => {
             path: '.github/close-label.yml',
         }))
         const config = yaml.safeLoad(Buffer.from(content.data.content, 'base64').toString())
+        if (Object.keys(config).length == 0) {
+            app.log('No label found in .github/close-label.yml. Stepping out...')
+            return
+        }
         issues.forEach(async id => {
             const issue = await context.github.issues.get(context.issue({
                 number: id,
