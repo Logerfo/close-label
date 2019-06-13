@@ -65,7 +65,7 @@ export = (app: Application) => {
             currentLabels.forEach(label => {
                 if (labels.has(label)) {
                     labels.delete(label)
-                    app.log(`Issue #${id} already have the label '${label}'. Skipping...`)
+                    app.log(`Issue #${id} already has the label '${label}'. Skipping...`)
                 }
                 else {
                     const labelToAdd = config[label]
