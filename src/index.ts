@@ -64,7 +64,7 @@ export = (app: Application) => {
                     const labelToAdd = config[label]
                     if (labelToAdd) {
                         labels.add(labelToAdd)
-                        app.log(`Label '${label}' is going to be added to issue #${id}.`)
+                        app.log(`Label '${labelToAdd}' is going to be added to issue #${id}.`)
                     }
                 }
             })
@@ -78,12 +78,12 @@ export = (app: Application) => {
                 await ensureLabelExists(context, label)
             })
             */
-            app.log(`Adding ${labels.size} labels to issue #${id}...`)
-            const addedLabels = await context.github.issues.addLabels(context.issue({
+            app.log(`Adding ${labels.size} label(s) to issue #${id}...`)
+            await context.github.issues.addLabels(context.issue({
                 labels: labelsToAdd,
                 number: id,
             }))
-            app.log(`${addedLabels.data.length} labels successfully added to issue #${id}.`)
+            app.log(`Label(s) successfully added to issue #${id}.`)
         })
     })
 }
