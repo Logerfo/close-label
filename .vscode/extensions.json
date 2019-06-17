@@ -4,6 +4,7 @@
 	"recommendations": [
 		"eg2.tslint",
 		"ban.spellright",
-		"eamodio.tsl-problem-matcher"
+		"eamodio.tsl-problem-matcher",
+		"logerfo.procfile-support",
 	]
 }
