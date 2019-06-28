@@ -25,11 +25,13 @@ export = (app: Application) => {
             app.log('Pull request is closed, but not merged. Stepping out...')
             return
         }
+        /*
         const repo = await context.github.repos.get(context.repo())
         if (repo.data.default_branch != pull.base.ref) {
             app.log(`The pull request target branch (${pull.base.ref}) is not the repo default branch (${repo.data.default_branch}). Stepping out...`)
             return
         }
+        */
         const issues = new Set<string>()
         let match = re.exec(pull.body)
         while (match) {
