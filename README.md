@@ -4,7 +4,7 @@
 
 # close-label
 
-> A GitHub App built with [Probot](https://github.com/probot/probot) that applies a specific label to an issue closed through a pull request targeting the default branch in the same repository considering its current labels.
+> A GitHub App built with [Probot](https://github.com/probot/probot) that applies a specific label to an issue closed through a pull request in the same repository considering its current labels.
 
 ## Setup for using the bot in your repo
 Create a file named `.github/close-label.yml` and fill it with whatever you like. Example:
@@ -13,14 +13,13 @@ bug: fixed
 enhancement: implemented
 feature: implemented
 ```
-If a pull request targeting the default branch gets merged and it has "fixes #42" in its body, if issue #42 has the label `feature`, the label `implemented` will be applied to it.
+If a pull request gets merged and it has "fixes #42" in its body, if issue #42 has the label `feature`, the label `implemented` will be applied to it.
 
 ### It will work for
 - Every [documented](https://help.github.com/en/articles/closing-issues-using-keywords) keyword.
 - Multiple index labels: if the issue has both `bug` and `feature` label, it will get labeled as both `fixed` and `implemented`.
 
 ### It will not work for
-- Pull requests targeting a branch other than the default. This is as design.
 - Retroactively, as design.
 - Multiple target labels. Example: `bug: ["fixed", "done"]`. This should be easy to do and it's up for grabs, feel free to submit a pull request making this happen.
 - Cross-repo references. I think it might be possible to develop if both repos have the app installed, but I'm not sure.
