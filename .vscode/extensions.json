@@ -6,5 +6,6 @@
 		"ban.spellright",
 		"eamodio.tsl-problem-matcher",
 		"logerfo.procfile-support",
+		"ms-azuretools.vscode-docker",
 	]
 }
