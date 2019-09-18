@@ -15,11 +15,29 @@ feature: implemented
 ```
 If a pull request gets merged and it has "fixes #42" in its body, if issue #42 has the label `feature`, the label `implemented` will be applied to it.
 
-### It will work for
+## Using the bot as a GitHub app
+Install the app through the GitHub [Marketplace](https://github.com/marketplace/close-label).
+
+## Using the bot as a GitHub Action
+```yml
+name: Close-label
+on:
+- pull-request
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: logerfo/close-label@0.0.3
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+```
+
+## It will work for
 - Every [documented](https://help.github.com/en/articles/closing-issues-using-keywords) keyword.
 - Multiple index labels: if the issue has both `bug` and `feature` label, it will get labeled as both `fixed` and `implemented`.
 
-### It will not work for
+## It will not work for
 - Retroactively, as design.
 - Multiple target labels. Example: `bug: ["fixed", "done"]`. This should be easy to do and it's up for grabs, feel free to submit a pull request making this happen.
 - Cross-repo references. I think it might be possible to develop if both repos have the app installed, but I'm not sure.
@@ -36,6 +54,9 @@ npm run build
 # Run the bot
 npm start
 ```
+
+## Changelog
+Click [here](CHANGELOG.md).
 
 ## Contributing
 
