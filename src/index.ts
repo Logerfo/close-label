@@ -53,7 +53,12 @@ export = (app: Application) => {
             app.log('.github/close-label.yml not found. Stepping out...')
             return
         }
-        const config = yaml.safeLoad(Buffer.from(content.data.content, 'base64').toString())
+        const data: any = content.data
+        if (!data.content) {
+            app.log('.github/close-label.yml is not a file. Stepping out...')
+            return
+        }
+        const config = yaml.safeLoad(Buffer.from(data.content, 'base64').toString())
         if (Object.keys(config).length == 0) {
             app.log('No label found in .github/close-label.yml. Stepping out...')
             return
