@@ -43,23 +43,8 @@ export = (app: Application) => {
             app.log('This pull request fixes no issue. Stepping out...')
             return
         }
-        let content
-        try {
-            content = await context.github.repos.getContents(context.repo({
-                path: '.github/close-label.yml',
-            }))
-        }
-        catch {
-            app.log('.github/close-label.yml not found. Stepping out...')
-            return
-        }
-        const data: any = content.data
-        if (!data.content) {
-            app.log('.github/close-label.yml is not a file. Stepping out...')
-            return
-        }
-        const config = yaml.safeLoad(Buffer.from(data.content, 'base64').toString())
-        if (Object.keys(config).length == 0) {
+        const config: any = await context.config('.github/close-label.yml')
+        if (!config) {
             app.log('No label found in .github/close-label.yml. Stepping out...')
             return
         }
