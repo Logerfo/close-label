@@ -26,7 +26,7 @@
   "dependencies": {
     "nock": "11.3.6",
     "@types/nock": "10.0.3",
-    "probot": "9.5.0",
+    "probot": "9.5.2",
     "js-yaml": "3.13.1",
     "typescript": "3.6.3",
     "snyk": "1.234.1"
