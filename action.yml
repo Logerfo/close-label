@@ -1,0 +1,11 @@
+name: close-label
+description: A Probot app that applies a specific label to an issue closed through a pull request considering its current labels.
+author: Bruno Logerfo
+
+branding:
+  icon: git-pull-request
+  color: red
+
+runs:
+  using: docker
+  image: Dockerfile
