@@ -4,7 +4,10 @@
   "description": "A Probot app that applies a specific label to an issue closed through a pull request considering its current labels.",
   "author": "Bruno Logerfo <bruno@logerfo.tk> (https://github.com/Logerfo)",
   "license": "ISC",
-  "repository": "https://github.com/close-label.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Logerfo/close-label.git"
+  },
   "homepage": "https://github.com/close-label",
   "bugs": "https://github.com/close-label/issues",
   "keywords": [
