@@ -37,7 +37,7 @@
     "probot": "9.5.2",
     "js-yaml": "3.13.1",
     "typescript": "3.6.3",
-    "snyk": "1.236.0"
+    "snyk": "1.236.1"
   },
   "devDependencies": {
     "@types/jest": "24.0.19",
