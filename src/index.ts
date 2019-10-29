@@ -48,7 +48,7 @@ export = (app: Application) => {
             app.log('No label found in .github/close-label.yml. Stepping out...')
             return
         }
-        issues.forEach(async id => {
+        for (const id of issues) {
             const issue = await context.github.issues.get(context.issue({
                 number: id,
             }))
@@ -69,7 +69,7 @@ export = (app: Application) => {
             })
             if (labels.size == 0) {
                 app.log(`No label to be added to issue #${id}. Skipping...`)
-                return
+                continue
             }
             const labelsToAdd = Array.from(labels)
             /*
@@ -83,6 +83,6 @@ export = (app: Application) => {
                 number: id,
             }))
             app.log(`Label(s) successfully added to issue #${id}.`)
-        })
+        }
     })
 }
