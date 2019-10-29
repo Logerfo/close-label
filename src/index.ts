@@ -1,5 +1,5 @@
 import { Application/*, Context*/ } from 'probot'
-const yaml = require('js-yaml')
+//const yaml = require('js-yaml')
 
 const re = /(?:(?:resolv|clos)e[ds]?|fix(?:e[ds])?) +#(\d+)/ig
 
