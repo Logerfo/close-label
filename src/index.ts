@@ -1,7 +1,7 @@
 import { Application/*, Context*/ } from 'probot'
 //const yaml = require('js-yaml')
 
-const re = /(?:(?:resolv|clos)e[ds]?|fix(?:e[ds])?) +#(\d+)/ig
+const re = /(?:(?:resolv|clos|fix)e[ds]?|fix) +#(\d+)/ig
 
 //couldn't get this to work, i think `getLabel` is creating the label if it doesn't exist
 /*
