@@ -27,16 +27,13 @@
     "start": "probot run ./lib/index.js",
     "lint": "standard **/*.ts --fix",
     "test": "jest && standard **/*.ts",
-    "test:watch": "jest --watch --notify --notifyMode=change --coverage",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "test:watch": "jest --watch --notify --notifyMode=change --coverage"
   },
   "dependencies": {
     "nock": "11.3.6",
     "@types/nock": "10.0.3",
     "probot": "9.5.2",
-    "typescript": "3.6.3",
-    "snyk": "1.236.1"
+    "typescript": "3.6.3"
   },
   "devDependencies": {
     "@types/jest": "24.0.19",
@@ -64,6 +61,5 @@
   },
   "jest": {
     "testEnvironment": "node"
-  },
-  "snyk": true
+  }
 }
