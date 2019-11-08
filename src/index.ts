@@ -54,7 +54,7 @@ export = (app: Application) => {
             }))
             const currentLabels = issue.data.labels.map(label => label.name)
             const labels = new Set<string>()
-            currentLabels.forEach(label => {
+            for (const label of currentLabels) {
                 if (labels.has(label)) {
                     labels.delete(label)
                     app.log(`Issue #${id} already has the label '${label}'. Skipping...`)
@@ -66,7 +66,7 @@ export = (app: Application) => {
                         app.log(`Label '${labelToAdd}' is going to be added to issue #${id}.`)
                     }
                 }
-            })
+            }
             if (labels.size == 0) {
                 app.log(`No label to be added to issue #${id}. Skipping...`)
                 continue
