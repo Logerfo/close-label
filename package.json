@@ -1,6 +1,6 @@
 {
   "name": "close-label",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": true,
   "description": "A Probot app that applies a specific label to an issue closed through a pull request considering its current labels.",
   "author": {

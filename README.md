@@ -27,7 +27,7 @@ jobs:
   triage:
     runs-on: ubuntu-latest
     steps:
-    - uses: logerfo/close-label@0.0.3
+    - uses: logerfo/close-label@0.0.4
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
 ```
