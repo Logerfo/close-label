@@ -43,7 +43,7 @@ export = (app: Application) => {
             app.log('This pull request fixes no issue. Stepping out...')
             return
         }
-        const config: any = await context.config('.github/close-label.yml')
+        const config: any = await context.config('close-label.yml')
         if (!config) {
             app.log('No label found in .github/close-label.yml. Stepping out...')
             return
