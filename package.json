@@ -30,7 +30,7 @@
     "test:watch": "jest --watch --notify --notifyMode=change --coverage"
   },
   "dependencies": {
-    "nock": "11.7.0",
+    "nock": "11.7.1",
     "@types/nock": "10.0.3",
     "probot": "9.8.1",
     "typescript": "3.7.4"
