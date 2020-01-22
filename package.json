@@ -39,7 +39,7 @@
     "@types/jest": "24.9.0",
     "@types/node": "11.15.4",
     "eslint-plugin-typescript": "0.14.0",
-    "jest": "24.9.0",
+    "jest": "25.1.0",
     "nodemon": "2.0.2",
     "smee-client": "1.1.0",
     "standard": "14.3.1",
