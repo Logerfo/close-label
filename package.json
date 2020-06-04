@@ -33,7 +33,7 @@
     "nock": "12.0.3",
     "@types/nock": "10.0.3",
     "probot": "9.11.4",
-    "typescript": "3.9.3"
+    "typescript": "3.9.5"
   },
   "devDependencies": {
     "@types/jest": "25.2.3",
