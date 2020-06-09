@@ -36,7 +36,7 @@
     "typescript": "3.9.5"
   },
   "devDependencies": {
-    "@types/jest": "25.2.3",
+    "@types/jest": "26.0.0",
     "@types/node": "11.15.15",
     "eslint-plugin-typescript": "0.14.0",
     "jest": "26.0.1",
