@@ -21,7 +21,7 @@ Install the app through the GitHub [Marketplace](https://github.com/marketplace/
 ```yml
 name: Close-label
 on:
-- pull-request
+- pull_request
 
 jobs:
   triage:
