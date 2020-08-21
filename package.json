@@ -32,7 +32,7 @@
   "dependencies": {
     "nock": "12.0.3",
     "@types/nock": "10.0.3",
-    "probot": "9.14.0",
+    "probot": "9.14.1",
     "typescript": "3.9.7"
   },
   "devDependencies": {
