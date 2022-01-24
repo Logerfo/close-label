@@ -12,5 +12,5 @@ runs:
 
 inputs:
   repo-token:
-    description: "You probably want it to be ${{ '${{ secrets.GITHUB_TOKEN }}' }}"
+    description: You probably want it to be secrets.GITHUB_TOKEN
     required: true
