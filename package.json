@@ -4,7 +4,7 @@
   "private": true,
   "description": "A Probot app that applies a specific label to an issue closed through a pull request considering its current labels.",
   "author": {
-    "email": "bruno@logerfo.tk",
+    "email": "bruno@logerfo.com.br",
     "name": "Bruno Logerfo",
     "url": "https://github.com/Logerfo"
   },
