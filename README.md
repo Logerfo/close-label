@@ -71,7 +71,7 @@ BTC: 1LoGErFoNzE1gCA5fzk6A82nV6iJdKssSZ
 
 ## License
 
-[ISC](LICENSE) © 2019 Bruno Logerfo <bruno@logerfo.tk> (https://github.com/Logerfo/close-label)
+[ISC](LICENSE) © 2019 Bruno Logerfo <bruno@logerfo.com.br> (https://github.com/Logerfo/close-label)
 
 ## Icon
 The [application icon](icon.png) is a modified version of a icon by [Cole Bemis](https://www.iconfinder.com/icons/3324935/branch_git_icon) under the [Creative Commons 3.0](https://creativecommons.org/licenses/by/3.0/) License.
