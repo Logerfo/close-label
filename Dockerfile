@@ -7,7 +7,7 @@ LABEL "com.github.actions.color"="red"
 
 LABEL "repository"="https://github.com/Logerfo/close-label"
 LABEL "homepage"="https://github.com/Logerfo"
-LABEL "maintainer"="bruno@logerfo.tk"
+LABEL "maintainer"="bruno@logerfo.com.br"
 
 ENV PATH=$PATH:/app/node_modules/.bin
 WORKDIR /app
